@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Military Introductions</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <style>
+        .output{display:none}
+    </style>
+</head>
+<body>
+<h1>US Military Introduction</h1>
+
+<form>
+
+    <label for="firstName">First Name: </label>
+    <input type="text" name="firstName" id="firstName"><br>
+
+    <label for="lastName">Last Name: </label>
+    <input type="text" name="lastName" id="lastName"><br>
+
+    <input type="radio" name="rank" id="rank-sergeant" value="Sgt.">
+    <label for="rank-sergeant">Sergeant</label><br>
+
+    <input type="radio" name="rank" id="rank-captain" value="Cpt.">
+    <label for="rank-captain">Captain</label><br>
+
+    <input type="radio" name="rank" id="rank-colonel" value="Col.">
+    <label for="rank-colonel">Colonel</label><br>
+
+    <button type="submit">Submit Introduction</button>
+</form>
+
+<p class="output">Hello, <span id="rank"></span> <span id="displayFirstName"></span> <span id="displayLastName"></span></p>
+
+
+</body>
+</html>
